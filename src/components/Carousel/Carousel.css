@@ -1,0 +1,29 @@
+/* Ensure the slider container has relative positioning */
+.slick-slider {
+    position: relative;
+}
+
+/* Customize the dots */
+.slick-dots {
+    position: absolute;
+    bottom: 10px; /* Adjust this value as needed */
+    width: 100%;
+    text-align: center;
+}
+
+/* Additional styling for the dots if needed */
+.slick-dots li button:before {
+    color: black; /* Color of the dots */
+}
+
+.slick-dots li.slick-active button:before {
+    color: red; /* Color of the active dot */
+}
+
+.slick-slide {
+    /* Flexbox can be used to center content, if needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Example of using min-height */
+}
