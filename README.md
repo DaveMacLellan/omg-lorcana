@@ -1,3 +1,7 @@
+# OMG Games Disney Lorcana League Tracker
+
+This web app allows league participants the ability to track their league points, record and winning decks.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
