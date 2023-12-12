@@ -1,0 +1,25 @@
+.winnerDeck-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.winner-week-container {
+    margin: 10px auto;
+    text-align: center;
+    flex-grow: 1;
+    min-width: 200px;
+}
+
+.winner-week-button {
+    padding: 5px 10px;
+    background-color: rgba(106, 0, 177, 0.723);
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Carter One', serif;
+}

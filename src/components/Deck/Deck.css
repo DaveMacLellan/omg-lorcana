@@ -1,0 +1,20 @@
+.deck-container {
+    height: fit-content;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+    font-family: 'Carter One', serif;
+    letter-spacing: 4px;
+}
+
+.deck-image {
+    height: 300px;
+}
+
+.deck-url {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+    font-family: 'Carter One', serif;
+    letter-spacing: 4px;
+    text-decoration: none;
+}

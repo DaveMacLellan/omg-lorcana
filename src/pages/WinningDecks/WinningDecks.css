@@ -1,0 +1,35 @@
+.winningDecks-container {
+    width: 100%;
+    margin: 0 auto;
+    margin: 0 auto;
+    height: 900px;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    width: 100vw;
+}
+
+.winningDecks-title-container {
+    display: flex;
+    height: 200px;
+    width: 80%;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.winningDecks-title {
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+    font-family: 'Carter One', serif;
+    letter-spacing: 4px;
+}
+
+.winningDecks-info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}

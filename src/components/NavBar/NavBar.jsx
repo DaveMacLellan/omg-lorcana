@@ -6,7 +6,7 @@ export default function NavBar() {
         <div className="navBar-container">
             <div className="navBar-title-container">
                 <img src={omgLogo} alt="OMG Logo"></img>
-                <p>OMG Disney Lorcana</p>                
+                <p>Disney Lorcana</p>                
             </div>
             <nav className="navBar-link-container">
                     <ul className="navBar-ul">

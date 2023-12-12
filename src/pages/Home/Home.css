@@ -2,111 +2,50 @@
     width: 100%;
     margin: 0 auto;
     margin: 0 auto;
+    height: 900px;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    width: 100vw;
 }
 
 .home-title-container {
-    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 80%;
     margin: 100px auto;
 }
 
-.home-title {
+.home-title-left {
     font-size: 4rem;
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 2px rgb(106, 0, 177), 0 0 2px rgb(106, 0, 177), 0 0 2px rgb(106, 0, 177), 0 0 2px rgb(106, 0, 177);
+    text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+    text-align: center; 
+    margin-left: 200px;
+    font-family: 'Carter One', serif;
+    letter-spacing: 4px;
+}
+
+.home-title-right {
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
     text-align: center;
+    margin-right: 30px;
+    font-family: 'Carter One', serif;
+    letter-spacing: 4px;
 }
 
 .home-info-container {
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 170px;
 }
 
-.home-info-league-standings {
-    width: 50%;
-    text-align: center;
-}
-
-.home-info-league-standings-table {
-    border-collapse: collapse;
-    margin: 0 auto;
-    width: 500px;
-}
-
-.home-info-league-standings-table-caption {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-bottom: none;
-    background-color: rgba(80, 1, 132, 0.8);
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-}
-
-.home-info-league-standings-table th {
-    background-color: rgba(106, 0, 177, 0.4);
-    color: white;
-    font-size: 1.5rem;
-}
-
-.home-info-league-standings-table tr {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    font-size: 1.5rem;
-}
-
-.home-info-league-standings-table th, .home-info-league-standings-table td {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 10px;
-}
-
-.home-info-league-standings-table tr:nth-child(even) {
-    background-color: rgba(80, 1, 132, 0.8);
-    color: white;
-}
-
-.home-info-game-standings {
-    width: 50%;
-    text-align: center;
-}
-
-.game-standings-table {
-    border-collapse: collapse;
-    margin: 0 auto;
-    width: 500px;
-}
-
-.game-standings-table-caption {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-bottom: none;
-    background-color: rgba(106, 0, 177, 0.5);
-    color: white;
-    font-size: 2rem;
-}
-
-.game-standings-table th {
-    background-color: rgba(106, 0, 177, 0.4);
-    color: white;
-    font-size: 1.5rem;
-}
-
-.game-standings-table tr {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    font-size: 1.5rem;
-}
-
-.game-standings-table th, .game-standings-table td {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 10px;
-}
-
-.game-standings-table tr:nth-child(even) {
-    background-color: rgba(106, 0, 177, 0.4);
-    color: white;
-}
-
-.table-points {
-    font-size: 1.5rem;
-}
 
 .home-carousel-container {
     width: 100%;
