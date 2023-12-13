@@ -4,7 +4,7 @@ import { collection, getDocs } from 'firebase/firestore'
 
 import './Leaderboard.css'
 
-export default function Leaderboard() {
+export default function Leaderboard(props) {
     const [gamePointRanks, setGamePointRanks] = useState([])
     const [leaguePointRanks, setleaguePointRanks] = useState([])
     const [leaders, setLeaders] = useState([])
@@ -24,86 +24,61 @@ export default function Leaderboard() {
         getUsers()        
     }, []);
 
-    // useEffect to set gamePointRanks
     useEffect(() => {
-        const rankedLeaders = leaders
+        // Function to safely get match record values
+        const getMatchValue = (value) => value || 0;
+    
+        //sorting league leaders
+        const leaguePointLeaders = leaders
             .map(leader => {
-                // Calculate points
-                const gamesPlayed = leader.matchRecord.win + leader.matchRecord.loss + leader.matchRecord.draw;
-                const points = leader.matchRecord.win * 2 + leader.matchRecord.draw;
+                const win = getMatchValue(leader.matchRecord.win);
+                const loss = getMatchValue(leader.matchRecord.loss);
+                const draw = getMatchValue(leader.matchRecord.draw);
+    
+                // Calculate points and games played
+                const gamesPlayed = win + loss + draw;
+                const points = win * 2 + draw;
                 return { ...leader, points, gamesPlayed };
             })
-            .sort((a, b) => b.points - a.points) // Sort by points, descending
-            .map((leader, index) => ({ ...leader, rank: index + 1 })); // Assign rank
-        
-        const leaguePointLeaders = leaders
             .sort((a, b) => b.leaguePoints - a.leaguePoints)
-            .map((leader, index) => ({ ...leader, rank: index + 1 }))
-
-        setGamePointRanks(rankedLeaders);
-        setleaguePointRanks(leaguePointLeaders)
-    }, [leaders]); // Dependency on 'leaders'
+            .map((leader, index) => ({ ...leader, rank: index + 1 }));
+    
+            setleaguePointRanks(leaguePointLeaders);
+    
+        // Sort the leaders again by game points and update gamePointRanks
+        const sortedByGamePoints = [...leaguePointLeaders]
+            .sort((a, b) => b.points - a.points);
+        setGamePointRanks(sortedByGamePoints);
+    }, [leaders]);
+    
 
     return (
         <>        
             <div className="leaderBoard-standings">
-                <table className="leaderBoard-table">
-                    <caption className="leaderBoard-table-caption" >League Point Leaders</caption>
-                    <thead className="leaderBoard-table-header">
-                        <tr>
-                            <th>NAME</th>
-                            <th>League Points</th>
-                        </tr>
-                    </thead>
-                    <tbody className="leaderBoard-table-body" >
-                        <tr>
-                            <td>{leaguePointRanks[0].name}</td>
-                            <td className="leaderBoard-table-points">{leaguePointRanks[0].leaguePoints}</td>
-                        </tr>
-                        <tr>
-                            <td>{leaguePointRanks[1].name}</td>
-                            <td className="leaderBoard-table-points">{leaguePointRanks[1].leaguePoints}</td>
-                        </tr>
-                        <tr>
-                            <td>{leaguePointRanks[2].name}</td>
-                            <td className="leaderBoard-table-points">{leaguePointRanks[2].leaguePoints}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div className="game-standings">
-                <table className="game-table">
-                    <caption className="game-table-caption" >Game Point Leaders</caption>
-                    <thead className="game-table-header">
-                        <tr>
-                            <th>NAME</th>
-                            <th>W/L/D</th>
-                            <th>POINTS</th>
-                            <th>WIN %</th>
-                        </tr>
-                    </thead>
-                    <tbody className="game-table-body" >
-                        <tr>
-                            <td>{gamePointRanks[0].name}</td>
-                            <td className="game-table-points">{gamePointRanks[0].matchRecord.win} / {gamePointRanks[0].matchRecord.loss} / {gamePointRanks[0].matchRecord.draw}</td>
-                            <td className="game-table-points">{gamePointRanks[0].points}</td>
-                            <td className="game-table-points">{(gamePointRanks[0].matchRecord.win / gamePointRanks[0].gamesPlayed) * 100}</td>
-                        </tr>
-                        <tr>
-                            <td>{gamePointRanks[1].name}</td>
-                            <td className="game-table-points">{gamePointRanks[1].matchRecord.win} / {gamePointRanks[1].matchRecord.loss} / {gamePointRanks[1].matchRecord.draw}</td>
-                            <td className="game-table-points">{gamePointRanks[1].points}</td>
-                            <td className="game-table-points">{(gamePointRanks[1].matchRecord.win / gamePointRanks[1].gamesPlayed) * 100}</td>
-                        </tr>
-                        <tr>
-                            <td>{gamePointRanks[2].name}</td>
-                            <td className="game-table-points">{gamePointRanks[2].matchRecord.win} / {gamePointRanks[2].matchRecord.loss} / {gamePointRanks[2].matchRecord.draw}</td>
-                            <td className="game-table-points">{gamePointRanks[2].points}</td>
-                            <td className="game-table-points">{(gamePointRanks[2].matchRecord.win / gamePointRanks[2].gamesPlayed) * 100}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                {leaguePointRanks.length > 0 &&
+                    <table className="leaderBoard-table">
+                        <caption className="leaderBoard-table-caption" >League Point Leaders</caption>
+                        <thead className="leaderBoard-table-header">
+                            <tr>
+                                <th>NAME</th>
+                                <th>League Points</th>
+                                <th>W/L/D</th>
+                                <th>WIN %</th>
+                            </tr>
+                        </thead>
+                        <tbody className="leaderBoard-table-body" >
+                            {leaguePointRanks.slice(0, props.leaderNum).map((user, index) => (
+                                <tr key={index}>
+                                    <td>{user.name}</td>
+                                    <td className="leaderBoard-table-points">{user.leaguePoints}</td>
+                                    <td className="game-table-points">{user.matchRecord.win} / {user.matchRecord.loss} / {user.matchRecord.draw}</td>
+                                    <td className="game-table-points">{Math.round((user.matchRecord.win / user.gamesPlayed) * 100)}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                }
+            </div>            
         </>
     )
 }

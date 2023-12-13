@@ -1,18 +1,10 @@
 .winningDecks-container {
-    width: 100%;
-    margin: 0 auto;
-    margin: 0 auto;
-    height: 900px;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 0px;
-    width: 100vw;
+    
 }
 
 .winningDecks-title-container {
     display: flex;
-    height: 200px;
+    height: fit-content;
     width: 80%;
     margin: 0px auto;
     justify-content: center;

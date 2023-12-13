@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import omgLogo from "../../assets/images/omgLogo.png"
 import "./NavBar.css"
 
@@ -9,11 +10,9 @@ export default function NavBar() {
                 <p>Disney Lorcana</p>                
             </div>
             <nav className="navBar-link-container">
-                    <ul className="navBar-ul">
-                        <li>Standings</li>
-                        <li>Weekly Report</li>
-                        <li>Winner Decks</li>
-                    </ul>
+                <Link className="link" to="/home" onClick={() => toggleMenu()}>Home</Link>                
+                <Link className="link" to="/standings" onClick={() => toggleMenu()}>Standings</Link>               
+                <Link className="link" to="/winnerdecks" onClick={() => toggleMenu()}>Winner Decks</Link>
             </nav>
         </div>
     )
