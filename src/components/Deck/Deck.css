@@ -1,20 +1,122 @@
-.deck-container {
-    height: fit-content;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
-    font-family: 'Carter One', serif;
-    letter-spacing: 4px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .deck-container {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .deck-image {
+        width: 100%;
+    }
+    
+    .deck-url {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+        text-decoration: none;
+    }
 }
 
-.deck-image {
-    height: 300px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .deck-container {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .deck-image {
+        width: 100%;
+    }
+    
+    .deck-url {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+        text-decoration: none;
+    }
 }
 
-.deck-url {
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
-    font-family: 'Carter One', serif;
-    letter-spacing: 4px;
-    text-decoration: none;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .deck-container {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .deck-image {
+        width: 100%;
+    }
+    
+    .deck-url {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+        text-decoration: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .deck-container {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .deck-image {
+        width: 100%;
+    }
+    
+    .deck-url {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+        text-decoration: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .deck-container {
+        width: 100%;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;    
+    }
+    
+    .deck-image {
+        width: 100%;
+    }
+    
+    .deck-url {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+        text-decoration: none;
+    }
 }

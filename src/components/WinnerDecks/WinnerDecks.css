@@ -1,25 +1,148 @@
-.winnerDeck-container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 10px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .winnerDeck-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+        
+    }
+    
+    .winner-week-container {
+        margin: 10px auto;
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    .winner-week-button {
+        padding: 5px;
+        background-color: rgba(106, 0, 177, 0.723);
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Carter One', serif;
+    }
 }
 
-.winner-week-container {
-    margin: 10px auto;
-    text-align: center;
-    flex-grow: 1;
-    min-width: 200px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .winnerDeck-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+        
+    }
+    
+    .winner-week-container {
+        margin: 10px auto;
+        text-align: center;
+        width: 90%;
+        
+    }
+    
+    .winner-week-button {
+        padding: 5px;
+        background-color: rgba(106, 0, 177, 0.723);
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Carter One', serif;
+    }
 }
 
-.winner-week-button {
-    padding: 5px;
-    background-color: rgba(106, 0, 177, 0.723);
-    font-size: 1rem;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-family: 'Carter One', serif;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .winnerDeck-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+        
+    }
+    
+    .winner-week-container {
+        margin: 10px auto;
+        text-align: center;
+        width: 80%;
+    }
+    
+    .winner-week-button {
+        padding: 5px;
+        background-color: rgba(106, 0, 177, 0.723);
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Carter One', serif;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .winnerDeck-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+        
+    }
+    
+    .winner-week-container {
+        margin: 10px auto;
+        text-align: center;
+        width: 45%;
+        
+    }
+    
+    .winner-week-button {
+        padding: 5px;
+        background-color: rgba(106, 0, 177, 0.723);
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Carter One', serif;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .winnerDeck-container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+        
+    }
+    
+    .winner-week-container {
+        margin: 10px auto;
+        text-align: center;
+        width: 45%;
+        
+    }
+    
+    .winner-week-button {
+        padding: 5px;
+        background-color: rgba(106, 0, 177, 0.723);
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Carter One', serif;
+    }
 }

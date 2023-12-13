@@ -36,7 +36,7 @@ export default function WinnerDecks() {
         return (
             <div key={index} className='winner-week-container'>
                 <button className='winner-week-button' onClick={() => toggleVisibility(index)}>
-                    Show Week {index + 1} Winning Deck
+                    Week {index + 1} Deck
                 </button>
                 {visibilityArray[index] && (
                     <Deck 

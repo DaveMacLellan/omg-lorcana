@@ -1,10 +1,32 @@
-/* Small Mobile Devices */
-@media only screen and (max-width: 480px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .layout-container {
         width: 100%;
         margin: 0 auto;
         height: 100vh;
-        background-size: 1800px 1000px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-color: rgb(13, 45, 67);
+        background-attachment: fixed;
+    }
+    
+    .header {
+        
+    }
+    
+    .main-content {
+        
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .layout-container {
+        width: 100%;
+        margin: 0 auto;
+        height: 100vh;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position-x: center;
         background-color: rgb(13, 45, 67);
@@ -15,92 +37,15 @@
     }
     
     .main-content {
-        padding-top: 55px;
-    }
-}
-
-/* Larger Mobile Devices */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .layout-container {
-        width: 100%;
-        margin: 0 auto;
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-color: rgb(29, 39, 64);
-    }
-    
-    .header {
         
     }
-    
-    .main-content {
-        padding-top: 55px;
-    }
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
 
-/* Tablets */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .layout-container {
-        width: 100%;
-        margin: 0 auto;
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-color: rgb(29, 39, 64);
-    }
-    
-    .header {
-        
-    }
-    
-    .main-content {
-        padding-top: 55px;
-    }
-}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
 
-
-/* Small Desktops/Laptops */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-    .layout-container {
-        width: 100%;
-        margin: 0 auto;
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-color: rgb(29, 39, 64);
-    }
-    
-    .header {
-        
-    }
-    
-    .main-content {
-        padding-top: 55px;
-    }
-}
-
-/* Large Desktops */
-@media only screen and (min-width: 1201px) {
-    .layout-container {
-        width: 100%;
-        margin: 0 auto;
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-color: rgb(29, 39, 64);
-    }
-    
-    .header {
-        
-    }
-    
-    .main-content {
-        padding-top: 55px;
-    }
-}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

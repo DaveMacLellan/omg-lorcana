@@ -5,7 +5,6 @@ import { collection, getDocs } from 'firebase/firestore'
 import './Leaderboard.css'
 
 export default function Leaderboard(props) {
-    const [gamePointRanks, setGamePointRanks] = useState([])
     const [leaguePointRanks, setleaguePointRanks] = useState([])
     const [leaders, setLeaders] = useState([])
     
@@ -45,10 +44,7 @@ export default function Leaderboard(props) {
     
             setleaguePointRanks(leaguePointLeaders);
     
-        // Sort the leaders again by game points and update gamePointRanks
-        const sortedByGamePoints = [...leaguePointLeaders]
-            .sort((a, b) => b.points - a.points);
-        setGamePointRanks(sortedByGamePoints);
+        
     }, [leaders]);
     
 
@@ -61,7 +57,7 @@ export default function Leaderboard(props) {
                         <thead className="leaderBoard-table-header">
                             <tr>
                                 <th>NAME</th>
-                                <th>League Points</th>
+                                <th>Points</th>
                                 <th>W/L/D</th>
                                 <th>WIN %</th>
                             </tr>

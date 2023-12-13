@@ -1,556 +1,314 @@
-/* Small Mobile Devices */
-@media only screen and (max-width: 480px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .leaderBoard-standings {
         text-align: center;
     }
-    
+
     .leaderBoard-table {
         border-collapse: collapse;
-        width: 100%;
         height: auto;
-    }
-    
-    .leaderBoard-table-caption {
-        border: 1px solid rgba(177, 172, 179, 0.8);
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom: none;
-        background-color: rgba(0, 166, 255, .8);
-        color: rgb(255, 255, 255);
-        font-size: 1.5rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table-header tr {
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-        font-size: 1rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table-body tr {
-        background-color: rgba(150, 110, 173, 0.8);
-        color: white;
-        font-size: 1rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table th, .leaderBoard-table td {
-        border: 1px solid rgba(177, 172, 179, 0.8);
-        padding: 5px;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table tr:nth-child(even) {
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-    }
-    
-    .leaderBoard-table-points {
-        font-size: 1.25rem;
-    }
-    
-    .game-standings {
+        margin: 0 auto;
         text-align: center;
     }
-    
-    .game-table {
-        border-collapse: collapse;
-        width: 100%;
-        height: auto;
-    }
-    
-    .game-table-caption {
-        border: 1px solid rgba(177, 172, 179, .8);
+
+    .leaderBoard-table-caption {
+        border: 1px solid rgba(177, 172, 179, 0.6);
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
         border-bottom: none;
-        background-color: rgba(0, 166, 255, .8);
+        background-color: rgba(0, 166, 255, .6);
+        color: rgb(255, 255, 255);
+        font-size: 1.25rem;
+        font-family: "Chakra Petch", serif;
+        font-weight: 300;
+    }
+
+    .leaderBoard-table-header tr {
+        background-color: rgba(0, 166, 255, .6);
+        color: white;
+        font-size: 1rem;
+        font-family: "Chakra Petch", serif;
+        font-weight: 300;
+        
+    }
+
+    .leaderBoard-table-body tr {
+        background-color: rgba(150, 110, 173, 0.6);
+        color: white;
+        font-size: 1rem;
+        font-family: "Chakra Petch", serif;
+        font-weight: 300;
+        
+    }
+
+    .leaderBoard-table th, .leaderBoard-table td {
+        border: 1px solid rgba(177, 172, 179, 0.6);
+        padding: 5px;
+        font-family: "Chakra Petch", serif;
+        font-weight: 300;
+        
+    }
+
+    .leaderBoard-table tr:nth-child(even) {
+        background-color: rgba(0, 166, 255, .6);
+        color: white;
+    }
+
+    .leaderBoard-table-points {
+        font-size: 1rem;
+    }
+
+    .game-table-points {
+        font-size: 1rem;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .leaderBoard-standings {
+        margin: 0 auto;
+    }
+
+    .leaderBoard-table {
+        border-collapse: collapse;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .leaderBoard-table-caption {
+        border: 1px solid rgba(177, 172, 179, 0.6);
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom: none;
+        background-color: rgba(0, 166, 255, .6);
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        font-family: "Chakra Petch", serif;
+        font-weight: 300;
+    }
+
+    .leaderBoard-table-header tr {
+        background-color: rgba(0, 166, 255, .6);
+        color: white;
+        
+        font-size: 1.5rem;
+        font-family: "Chakra Petch", serif;
+        font-weight: 300;
+    }
+
+    .leaderBoard-table-body tr {
+        background-color: rgba(150, 110, 173, 0.6);
         color: white;
         font-size: 1.5rem;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
-    .game-table-header {
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-        font-size: 1rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .game-table-body tr {
-        background-color: rgba(150, 110, 173, 0.8);
-        color: white;
-        font-size: 1rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .game-table th, .game-table td {
-        border: 1px solid rgba(177, 172, 179, 0.8);
+
+    .leaderBoard-table th, .leaderBoard-table td {
+        border: 1px solid rgba(177, 172, 179, 0.6);
         padding: 5px;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
-    .game-table tr:nth-child(even) {
-        background-color: rgba(0, 166, 255, 0.8);
+
+    .leaderBoard-table tr:nth-child(even) {
+        background-color: rgba(0, 166, 255, .6);
         color: white;
     }
-    
+
+    .leaderBoard-table-points {
+        font-size: 2rem;
+    }
+
     .game-table-points {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
 
-/* Larger Mobile Devices */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     .leaderBoard-standings {
-        text-align: center;
+        margin: 0 auto;
     }
-    
+
     .leaderBoard-table {
         border-collapse: collapse;
-        width: 100%;
         height: auto;
-    }
-    
-    .leaderBoard-table-caption {
-        border: 1px solid rgba(177, 172, 179, 0.8);
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom: none;
-        background-color: rgba(0, 166, 255, .8);
-        color: rgb(255, 255, 255);
-        font-size: 1.5rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table-header tr {
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-        font-size: 1rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table-body tr {
-        background-color: rgba(150, 110, 173, 0.8);
-        color: white;
-        font-size: 1rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table th, .leaderBoard-table td {
-        border: 1px solid rgba(177, 172, 179, 0.8);
-        padding: 5px;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table tr:nth-child(even) {
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-    }
-    
-    .leaderBoard-table-points {
-        font-size: 1.25rem;
-    }
-    
-    .game-standings {
+        margin: 0 auto;
         text-align: center;
     }
-    
-    .game-table {
-        border-collapse: collapse;
-        width: 100%;
-        height: auto;
-    }
-    
-    .game-table-caption {
-        border: 1px solid rgba(177, 172, 179, .8);
+
+    .leaderBoard-table-caption {
+        border: 1px solid rgba(177, 172, 179, 0.6);
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
         border-bottom: none;
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-        font-size: 1.5rem;
+        background-color: rgba(0, 166, 255, .6);
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
-    .game-table-header {
-        background-color: rgba(0, 166, 255, .8);
+
+    .leaderBoard-table-header tr {
+        background-color: rgba(0, 166, 255, .6);
         color: white;
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
-    .game-table-body tr {
-        background-color: rgba(150, 110, 173, 0.8);
+
+    .leaderBoard-table-body tr {
+        background-color: rgba(150, 110, 173, 0.6);
         color: white;
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
-    .game-table th, .game-table td {
-        border: 1px solid rgba(177, 172, 179, 0.8);
+
+    .leaderBoard-table th, .leaderBoard-table td {
+        border: 1px solid rgba(177, 172, 179, 0.6);
         padding: 5px;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
-    .game-table tr:nth-child(even) {
-        background-color: rgba(0, 166, 255, 0.8);
+
+    .leaderBoard-table tr:nth-child(even) {
+        background-color: rgba(0, 166, 255, .6);
         color: white;
     }
-    
+
+    .leaderBoard-table-points {
+        font-size: 2rem;
+    }
+
     .game-table-points {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
 
-
-/* Tablets */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
     .leaderBoard-standings {
-        text-align: center;
+        margin: 0 auto;
     }
-    
+
     .leaderBoard-table {
         border-collapse: collapse;
-        width: 100%;
         height: auto;
-    }
-    
-    .leaderBoard-table-caption {
-        border: 1px solid rgba(177, 172, 179, 0.8);
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom: none;
-        background-color: rgba(0, 166, 255, .8);
-        color: rgb(255, 255, 255);
-        font-size: 1.5rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table-header tr {
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-        font-size: 1rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table-body tr {
-        background-color: rgba(150, 110, 173, 0.8);
-        color: white;
-        font-size: 1rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table th, .leaderBoard-table td {
-        border: 1px solid rgba(177, 172, 179, 0.8);
-        padding: 5px;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table tr:nth-child(even) {
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-    }
-    
-    .leaderBoard-table-points {
-        font-size: 1.25rem;
-    }
-    
-    .game-standings {
+        margin: 0 auto;
         text-align: center;
     }
-    
-    .game-table {
-        border-collapse: collapse;
-        width: 100%;
-        height: auto;
-    }
-    
-    .game-table-caption {
-        border: 1px solid rgba(177, 172, 179, .8);
+
+    .leaderBoard-table-caption {
+        border: 1px solid rgba(177, 172, 179, 0.6);
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
         border-bottom: none;
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-        font-size: 1.5rem;
+        background-color: rgba(0, 166, 255, .6);
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
-    .game-table-header {
-        background-color: rgba(0, 166, 255, .8);
+
+    .leaderBoard-table-header tr {
+        background-color: rgba(0, 166, 255, .6);
         color: white;
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
-    .game-table-body tr {
-        background-color: rgba(150, 110, 173, 0.8);
+
+    .leaderBoard-table-body tr {
+        background-color: rgba(150, 110, 173, 0.6);
         color: white;
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
-    .game-table th, .game-table td {
-        border: 1px solid rgba(177, 172, 179, 0.8);
+
+    .leaderBoard-table th, .leaderBoard-table td {
+        border: 1px solid rgba(177, 172, 179, 0.6);
         padding: 5px;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
-    .game-table tr:nth-child(even) {
-        background-color: rgba(0, 166, 255, 0.8);
+
+    .leaderBoard-table tr:nth-child(even) {
+        background-color: rgba(0, 166, 255, .6);
         color: white;
     }
-    
+
+    .leaderBoard-table-points {
+        font-size: 2rem;
+    }
+
     .game-table-points {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
 
-
-/* Small Desktops/Laptops */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
     .leaderBoard-standings {
-        text-align: center;
+        margin: 0 auto;
     }
-    
+
     .leaderBoard-table {
         border-collapse: collapse;
-        width: 100%;
         height: auto;
-    }
-    
-    .leaderBoard-table-caption {
-        border: 1px solid rgba(177, 172, 179, 0.8);
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom: none;
-        background-color: rgba(0, 166, 255, .8);
-        color: rgb(255, 255, 255);
-        font-size: 1.8rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table-header tr {
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-        font-size: 1.25rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table-body tr {
-        background-color: rgba(150, 110, 173, 0.8);
-        color: white;
-        font-size: 1.25rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table th, .leaderBoard-table td {
-        border: 1px solid rgba(177, 172, 179, 0.8);
-        padding: 5px;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .leaderBoard-table tr:nth-child(even) {
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-    }
-    
-    .leaderBoard-table-points {
-        font-size: 1.25rem;
-    }
-    
-    .game-standings {
+        margin: 0 auto;
         text-align: center;
     }
-    
-    .game-table {
-        border-collapse: collapse;
-        width: 100%;
-        height: auto;
-    }
-    
-    .game-table-caption {
-        border: 1px solid rgba(177, 172, 179, .8);
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom: none;
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-        font-size: 1.8rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .game-table-header {
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-        font-size: 1.25rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .game-table-body tr {
-        background-color: rgba(150, 110, 173, 0.8);
-        color: white;
-        font-size: 1.25rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .game-table th, .game-table td {
-        border: 1px solid rgba(177, 172, 179, 0.8);
-        padding: 5px;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .game-table tr:nth-child(even) {
-        background-color: rgba(0, 166, 255, 0.8);
-        color: white;
-    }
-    
-    .game-table-points {
-        font-size: 1.25rem;
-    }
-}
 
-/* Large Desktops */
-@media only screen and (min-width: 1201px) {
-    .leaderBoard-standings {
-        text-align: center;
-    }
-    
-    .leaderBoard-table {
-        border-collapse: collapse;
-        width: 100%;
-        height: auto;
-    }
-    
     .leaderBoard-table-caption {
-        border: 1px solid rgba(177, 172, 179, 0.8);
+        border: 1px solid rgba(177, 172, 179, 0.6);
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
         border-bottom: none;
-        background-color: rgba(0, 166, 255, .8);
+        background-color: rgba(0, 166, 255, .6);
         color: rgb(255, 255, 255);
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
+
     .leaderBoard-table-header tr {
-        background-color: rgba(0, 166, 255, .8);
+        background-color: rgba(0, 166, 255, .6);
         color: white;
-        font-size: 1.25rem;
+        font-size: 2rem;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
+
     .leaderBoard-table-body tr {
-        background-color: rgba(150, 110, 173, 0.8);
+        background-color: rgba(150, 110, 173, 0.6);
         color: white;
-        font-size: 1.25rem;
+        font-size: 2rem;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
+
     .leaderBoard-table th, .leaderBoard-table td {
-        border: 1px solid rgba(177, 172, 179, 0.8);
+        border: 1px solid rgba(177, 172, 179, 0.6);
         padding: 5px;
         font-family: "Chakra Petch", serif;
         font-weight: 300;
     }
-    
+
     .leaderBoard-table tr:nth-child(even) {
-        background-color: rgba(0, 166, 255, .8);
+        background-color: rgba(0, 166, 255, .6);
         color: white;
     }
-    
+
     .leaderBoard-table-points {
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
-    
-    .game-standings {
-        text-align: center;
-    }
-    
-    .game-table {
-        border-collapse: collapse;
-        width: 100%;
-        height: auto;
-    }
-    
-    .game-table-caption {
-        border: 1px solid rgba(177, 172, 179, .8);
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom: none;
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-        font-size: 1.8rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .game-table-header {
-        background-color: rgba(0, 166, 255, .8);
-        color: white;
-        font-size: 1.25rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .game-table-body tr {
-        background-color: rgba(150, 110, 173, 0.8);
-        color: white;
-        font-size: 1.25rem;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .game-table th, .game-table td {
-        border: 1px solid rgba(177, 172, 179, 0.8);
-        padding: 5px;
-        font-family: "Chakra Petch", serif;
-        font-weight: 300;
-    }
-    
-    .game-table tr:nth-child(even) {
-        background-color: rgba(0, 166, 255, 0.8);
-        color: white;
-    }
-    
+
     .game-table-points {
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
 }

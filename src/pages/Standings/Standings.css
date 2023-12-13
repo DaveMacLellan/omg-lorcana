@@ -1,24 +1,158 @@
-.standings-title-container {
-    display: flex;
-    height: fit-content;
-    width: 80%;
-    margin: 0px auto;
-    justify-content: center;
-    align-items: center;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .standings-container {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
+    .standings-title-container {
+        display: flex;
+        width: 80%;
+        margin: 50px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .standings-title {
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .standings-info-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 90%;
+    }
 }
 
-.standings-title {
-    font-size: 4rem;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
-    font-family: 'Carter One', serif;
-    letter-spacing: 4px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .standings-container {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
+    .standings-title-container {
+        display: flex;
+        height: fit-content;
+        width: 80%;
+        margin: 50px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .standings-title {
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .standings-info-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 90%;
+    }
 }
 
-.standings-info-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-top: 100px;
-    width: 80%;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .standings-container {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
+    .standings-title-container {
+        display: flex;
+        height: fit-content;
+        width: 80%;
+        margin: 50px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .standings-title {
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .standings-info-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .standings-container {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
+    .standings-title-container {
+        display: flex;
+        height: fit-content;
+        width: 80%;
+        margin: 50px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .standings-title {
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .standings-info-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .standings-container {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
+    .standings-title-container {
+        display: flex;
+        height: fit-content;
+        width: 80%;
+        margin: 50px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .standings-title {
+        font-size: 4rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .standings-info-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 90%;
+    }
 }

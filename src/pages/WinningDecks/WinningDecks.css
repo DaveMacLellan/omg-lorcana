@@ -1,27 +1,166 @@
-.winningDecks-container {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .winningDecks-container {
+        height: 90vh;
+        overflow-y: scroll;
+    }
     
+    .winningDecks-title-container {
+        display: flex;
+        height: fit-content;
+        text-align: center;
+        width: 80%;
+        margin: 50px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .winningDecks-title {
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .winningDecks-info-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
 }
 
-.winningDecks-title-container {
-    display: flex;
-    height: fit-content;
-    width: 80%;
-    margin: 0px auto;
-    justify-content: center;
-    align-items: center;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .winningDecks-container {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+    
+    .winningDecks-title-container {
+        display: flex;
+        height: fit-content;
+        text-align: center;
+        width: 80%;
+        margin: 50px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .winningDecks-title {
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .winningDecks-info-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 50px;
+    }
 }
 
-.winningDecks-title {
-    font-size: 4rem;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
-    font-family: 'Carter One', serif;
-    letter-spacing: 4px;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .winningDecks-container {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+    
+    .winningDecks-title-container {
+        display: flex;
+        height: fit-content;
+        text-align: center;
+        width: 80%;
+        margin: 50px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .winningDecks-title {
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .winningDecks-info-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 50px;
+    }
 }
 
-.winningDecks-info-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 50px;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .winningDecks-container {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+    
+    .winningDecks-title-container {
+        display: flex;
+        height: fit-content;
+        text-align: center;
+        width: 80%;
+        margin: 50px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .winningDecks-title {
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .winningDecks-info-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .winningDecks-container {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+    
+    .winningDecks-title-container {
+        display: flex;
+        height: fit-content;
+        text-align: center;
+        width: 80%;
+        margin: 50px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .winningDecks-title {
+        font-size: 4rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177), 0 0 4px rgb(106, 0, 177);
+        font-family: 'Carter One', serif;
+        letter-spacing: 4px;
+    }
+    
+    .winningDecks-info-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 50px;
+    }
 }
