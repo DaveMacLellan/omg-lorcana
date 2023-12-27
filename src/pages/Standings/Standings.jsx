@@ -8,7 +8,7 @@ export default function Standings() {
                 <h1 className="standings-title">Standings</h1>
             </div>
             <div className="standings-info-container">
-                <Leaderboard leaderNum={20}/>
+                <Leaderboard title={"League Point Leaders"} leaderNum={20}/>
             </div>
         </div>
     )

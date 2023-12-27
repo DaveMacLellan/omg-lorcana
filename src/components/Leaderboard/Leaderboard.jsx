@@ -34,12 +34,21 @@ export default function Leaderboard(props) {
                 const loss = getMatchValue(leader.matchRecord.loss);
                 const draw = getMatchValue(leader.matchRecord.draw);
     
-                // Calculate points and games played
+                // Calculate games played
                 const gamesPlayed = win + loss + draw;
-                const points = win * 2 + draw;
-                return { ...leader, points, gamesPlayed };
+
+                return { ...leader, gamesPlayed };
             })
-            .sort((a, b) => b.leaguePoints - a.leaguePoints)
+            .sort((a, b) => {
+                // Primary sort by points
+                if (b.leaguePoints !== a.leaguePoints) {
+                    return b.leaguePoints - a.leaguePoints;
+                }
+                // Secondary sort by win percentage
+                const winPercentageA = a.matchRecord.win / a.gamesPlayed;
+                const winPercentageB = b.matchRecord.win / b.gamesPlayed;
+                return Math.round(winPercentageB * 100) - Math.round(winPercentageA * 100);
+            })
             .map((leader, index) => ({ ...leader, rank: index + 1 }));
     
             setleaguePointRanks(leaguePointLeaders);
@@ -53,7 +62,7 @@ export default function Leaderboard(props) {
             <div className="leaderBoard-standings">
                 {leaguePointRanks.length > 0 &&
                     <table className="leaderBoard-table">
-                        <caption className="leaderBoard-table-caption" >League Point Leaders</caption>
+                        <caption className="leaderBoard-table-caption" >{props.title}</caption>
                         <thead className="leaderBoard-table-header">
                             <tr>
                                 <th>NAME</th>

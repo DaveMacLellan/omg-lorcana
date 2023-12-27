@@ -12,7 +12,7 @@ export default function Home() {
                 <h1 className="home-title-right">Disney Lorcana</h1>
             </div>
             <div className="home-info-container">
-                <Leaderboard leaderNum={3}/>
+                <Leaderboard title={"League Point Leaders Top 3"} leaderNum={3}/>
             </div>
         </div>
     )
